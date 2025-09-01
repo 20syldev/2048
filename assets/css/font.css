@@ -1,0 +1,57 @@
+/* - - - - - - - Font - - - - - - - */
+
+@font-face {
+    font-family: 'Clear Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Clear Sans'), url('https://fonts.cdnfonts.com/s/16214/ClearSans-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Clear Sans'), url('https://fonts.cdnfonts.com/s/16214/ClearSans-Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Clear Sans'), url('https://fonts.cdnfonts.com/s/16214/ClearSans-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Clear Sans'), url('https://fonts.cdnfonts.com/s/16214/ClearSans-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Clear Sans Thin';
+    font-style: normal;
+    font-weight: 250;
+    src: local('Clear Sans Thin'), url('https://fonts.cdnfonts.com/s/16214/ClearSans-Thin.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Clear Sans Light';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Clear Sans Light'), url('https://fonts.cdnfonts.com/s/16214/ClearSans-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Clear Sans Medium';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Clear Sans Medium'), url('https://fonts.cdnfonts.com/s/16214/ClearSans-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Clear Sans Medium';
+    font-style: italic;
+    font-weight: 500;
+    src: local('Clear Sans Medium'), url('https://fonts.cdnfonts.com/s/16214/ClearSans-MediumItalic.woff') format('woff');
+}
