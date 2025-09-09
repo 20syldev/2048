@@ -171,9 +171,8 @@ class KeyboardInputManager {
         this.bindButtonPress('.keep-playing-button', this.keepPlaying);
 
         let touchStartClientX, touchStartClientY;
-        const gameContainer = document.querySelector('.game-container');
 
-        gameContainer.addEventListener(this.eventTouchstart, (event) => {
+        document.addEventListener(this.eventTouchstart, (event) => {
             if ((!window.navigator.msPointerEnabled && event.touches.length > 1) ||
                 event.targetTouches.length > 1) {
                 return;
@@ -190,11 +189,15 @@ class KeyboardInputManager {
             event.preventDefault();
         });
 
-        gameContainer.addEventListener(this.eventTouchmove, (event) => {
+        document.addEventListener(this.eventTouchmove, (event) => {
             event.preventDefault();
         });
 
-        gameContainer.addEventListener(this.eventTouchend, (event) => {
+        document.addEventListener('touchmove', (event) => {
+            event.preventDefault();
+        }, { passive: false });
+
+        document.addEventListener(this.eventTouchend, (event) => {
             if ((!window.navigator.msPointerEnabled && event.touches.length > 0) ||
                 event.targetTouches.length > 0) {
                 return;
