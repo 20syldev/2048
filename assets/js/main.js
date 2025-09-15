@@ -136,23 +136,23 @@ class KeyboardInputManager {
         const self = this;
 
         const map = {
-            38: 0, // Up
-            39: 1, // Right
-            40: 2, // Down
-            37: 3, // Left
-            75: 0, // Vim up
-            76: 1, // Vim right
-            74: 2, // Vim down
-            72: 3, // Vim left
-            87: 0, // W
-            68: 1, // D
-            83: 2, // S
-            65: 3 // A
+            'ArrowUp': 0, // Up
+            'ArrowRight': 1, // Right
+            'ArrowDown': 2, // Down
+            'ArrowLeft': 3, // Left
+            'KeyK': 0, // Vim up
+            'KeyL': 1, // Vim right
+            'KeyJ': 2, // Vim down
+            'KeyH': 3, // Vim left
+            'KeyZ': 0, // Z
+            'KeyD': 1, // D
+            'KeyS': 2, // S
+            'KeyQ': 3 // Q
         };
 
         document.addEventListener('keydown', (event) => {
             const modifiers = event.altKey || event.ctrlKey || event.metaKey || event.shiftKey;
-            const mapped = map[event.which];
+            const mapped = map[event.code];
 
             if (!modifiers) {
                 if (mapped !== undefined) {
@@ -161,7 +161,7 @@ class KeyboardInputManager {
                 }
             }
 
-            if (!modifiers && event.which === 82) {
+            if (!modifiers && event.code === 'KeyR') {
                 self.restart.call(self, event);
             }
         });
