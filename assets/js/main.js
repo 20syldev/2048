@@ -140,14 +140,10 @@ class KeyboardInputManager {
             'ArrowRight': 1, // Right
             'ArrowDown': 2, // Down
             'ArrowLeft': 3, // Left
-            'KeyK': 0, // Vim up
-            'KeyL': 1, // Vim right
-            'KeyJ': 2, // Vim down
-            'KeyH': 3, // Vim left
-            'KeyZ': 0, // Z
+            'KeyW': 0, // Z
             'KeyD': 1, // D
             'KeyS': 2, // S
-            'KeyQ': 3 // Q
+            'KeyA': 3 // Q
         };
 
         document.addEventListener('keydown', (event) => {
